@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ansh Thakar | Portfolio</title>
+
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card: #161b22;
+      --text: #e6edf3;
+      --muted: #9ba3b4;
+      --accent: #58a6ff;
+      --shadow: rgba(0, 0, 0, 0.6);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", system-ui, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 80px 8%;
+    }
+
+    h2 {
+      margin-bottom: 40px;
+      font-size: 2.2rem;
+    }
+
+    p { color: var(--muted); }
+
+    /* HERO */
+    .hero-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+    .hero-text {
+  max-width: 600px;
+}
+
+
+
+    .profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 25px 60px var(--shadow);
+  border: 4px solid var(--card);
+}
+
+     @media (min-width: 1200px) {
+  .profile-pic {
+    width: 340px;
+    height: 340px;
+  }
+}
+
+
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      margin-right: 15px;
+      padding: 12px 22px;
+      border-radius: 10px;
+      background: var(--card);
+      color: var(--text);
+      text-decoration: none;
+      box-shadow: 0 10px 25px var(--shadow);
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px var(--shadow);
+    }
+
+    /* GRID & CARDS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px var(--shadow);
+      transition: 0.35s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 60px var(--shadow);
+    }
+
+    .project-img,
+    .cert-img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .tags {
+      color: var(--accent);
+      font-size: 0.9rem;
+      margin-top: 8px;
+    }
+    .about {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 850px;
+}
+
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section>
+  <div class="hero-container">
+    <div>
+      <h1>Ansh Thakar</h1>
+      <h3 style="color:#58a6ff;">
+        AI Developer | Web Developer | Prompt Engineer | Founder & CEO – ANOVIX AI
+      </h3>
+      <p>
+        I design intelligent software systems, AI-powered solutions, and high-quality visuals
+        using advanced prompt engineering and modern web technologies.
+      </p>
+      <a href="#projects" class="btn">Explore My Work</a>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+
+    <!-- PROFILE IMAGE -->
+    <img 
+      src="anshu.jpeg"
+      class="profile-pic"
+      alt="Ansh Thakar"
+    />
+  </div>
+</section>
+
+<!-- ABOUT ME -->
+<section id="about">
+  <div class="about">
+    <h2>About Me</h2>
+
+    <p>
+      I am an AI and software developer with a strong interest in building real-world,
+      practical systems using Python, web technologies, and modern AI tools. I focus on
+      learning by building — from intelligent desktop assistants to automation systems
+      and full-stack web projects.
+    </p>
+
+    <p>
+      I actively work with artificial intelligence, prompt engineering, and generative
+      AI tools to create useful software and high-quality visual outputs. I have applied
+      these skills in real projects, including AI assistants, automation tools, and
+      AI-generated designs for business use.
+    </p>
+
+    <p>
+      I am also the Founder and CEO of <strong>ANOVIX AI</strong>, where I design,
+      develop, and manage AI-based systems and long-term project architecture.
+      My goal is to continuously improve my technical depth, build impactful products,
+      and grow into a highly skilled engineer through consistent hands-on work.
+    </p>
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="C:\Users\Ansht\Downloads\ChatGPT Image Dec 16, 2025, 04_49_48 PM.ico" class="project-img">
+      <h4>ANOVIX AI</h4>
+      <p>Advanced Python AI desktop assistant with automation and system tools.</p>
+      <div class="tags">Python • AI • Automation</div>
+    </div>
+
+    <div class="card">
+      <img src="C:\Users\Ansht\Downloads\download (1).jpeg" class="project-img">
+      <h4>JARVIS-Style AI Assistant</h4>
+      <p>Command-driven AI assistant for automation.</p>
+      <div class="tags">Python • Automation</div>
+    </div>
+
+    <div class="card">
+      <img src="C:\Users\Ansht\OneDrive\WEB DEVELOPMENT\PORTFOLIO\ms loca.png" class="project-img">
+      <h4>Railway Ticket Booking System</h4>
+      <p>Fare calculation and ticket generation system.</p>
+      <div class="tags">Python • Logic</div>
+    </div>
+
+    <div class="card">
+      <img src="C:\Users\Ansht\OneDrive\WEB DEVELOPMENT\PORTFOLIO\hqdefault.jpg" class="project-img">
+      <h4>Weather Application</h4>
+      <p>API-based real-time weather web app.</p>
+      <div class="tags">HTML • CSS • JS • API</div>
+    </div>
+
+    <div class="card">
+      <img src="C:\Users\Ansht\OneDrive\WEB DEVELOPMENT\PORTFOLIO\1.webp" class="project-img">
+      <h4>Tic Tac Toe Game</h4>
+      <p>Interactive browser game.</p>
+      <div class="tags">HTML • CSS • JavaScript</div>
+    </div>
+
+    <div class="card">
+      <img src="C:\Users\Ansht\OneDrive\WEB DEVELOPMENT\PORTFOLIO\images.jpg" class="project-img">
+      <h4>Python Mini Projects (25+)</h4>
+      <p>Collection of logic-building Python projects.</p>
+      <div class="tags">Python</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section>
+  <h2>Certifications</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="C:\Users\Ansht\OneDrive\WEB DEVELOPMENT\PORTFOLIO\prompt.png" class="cert-img">
+      <p>Microsoft – Prompt Engineering with GitHub Copilot</p>
+    </div>
+
+    <div class="card">
+      <img src="C:\Users\Ansht\OneDrive\WEB DEVELOPMENT\PORTFOLIO\Ansh Thakar - Python.png" class="cert-img">
+      <p>Kaggle – Python</p>
+    </div>
+
+    <div class="card">
+      <img src="C:\Users\Ansht\OneDrive\WEB DEVELOPMENT\Certificates\Ansh Thakar - Intro to Machine Learning.png" class="cert-img">
+      <p>Kaggle – Introduction to Machine Learning</p>
+    </div>
+
+    <div class="card">
+      <img src="C:\Users\Ansht\OneDrive\WEB DEVELOPMENT\PORTFOLIO\5-Day AI Agents Intensive Course with Google.png" class="cert-img">
+      <p>Kaggle × Google – AI Agents Intensive</p>
+    </div>
+
+    <div class="card">
+      <img src= "C:\Users\Ansht\OneDrive\WEB DEVELOPMENT\PORTFOLIO\genai.png"class="cert-img">
+      <p>GOOGLE - GEN AI</p>
+    </div>
+
+
+    <div class="card">
+      <img src="C:\Users\Ansht\OneDrive\WEB DEVELOPMENT\PORTFOLIO\html.png" class="cert-img">
+      <p>Simplilearn – HTML & SQL</p>
+    </div>
+
+     <div class="card">
+      <img src= "C:\Users\Ansht\OneDrive\WEB DEVELOPMENT\PORTFOLIO\sql.png"class="cert-img">
+      <p>Simplilearn – SQL</p>
+    </div>
+
+    <div class="card">
+      <img src= "C:\Users\Ansht\OneDrive\WEB DEVELOPMENT\PORTFOLIO\be10x.png"class="cert-img">
+      <p>Be10X – AI Tools & ChatGPT Workshop</p>
+    </div>
+
+  </div>
+
+  <br>
+  <a href="https://drive.google.com/" target="_blank" class="btn">View All Certificates</a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Reach out for collaboration or opportunities.</p>
+  <a href="https://wa.me/919930620710?text=Hello Ansh Thakar." class="btn">WhatsApp</a>
+  <a href="https://www.instagram.com/x_ansh7_x?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="btn">Instagram</a>
+  <a href="mailto:anshthakar791@gmail.com" class="btn">Gmail</a>
+</section>
+
+<footer>
+  © 2026 Ansh Thakar. All rights reserved.
+</footer>
+<script src="backend.js"></script>
+
+</body>
+</html>
